@@ -1,0 +1,80 @@
+<!-- <p [class]="classNames" [title]="classNames">
+  {{ message }}
+</p>
+ -->
+<div class="nav">
+   <ul class="nav-list">
+      <li class="nav-list-item"><a class="nav-list-item-text" href="#about">About Me</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-text" href="/projects.html">Projects</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-text" href="/gallery.html">Gallery</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-text" href="#contact">Contact</a></li>
+  </ul>
+ </div>
+
+
+<div class="lead">
+  <div id="lead-down">
+    <span>
+       <fa-icon [icon]="faChevronDown" class="fa-icon" ></fa-icon>
+    </span>
+  </div>
+</div>
+
+<div id="about">
+    <div class="row">
+      <div class="col-md-3">
+        <h2 class="heading">Hello, it's me!</h2>
+      </div>
+      <div class="col-md-9">
+        <p>
+        I am a Computing Science Major and Business Minor student at Simon Fraser University in Vancouver, Canada.<br><br>It excites me to take complex problems and turn them into simple and creative designs, be it graphics or software development! I love the logic and structure of coding and always strive to write elegant and smart code, whether it be C++, Python, HTML, CSS, or Javascript.<br><br>When I am not coding or working on cool projects, I volunteer as a marketing coordinator at the<a href="http://designlablive.com"> Design Lab</a>, work as a fashion model at Vancouver Fashion Week, and I enjoy hiking and exploring more about the beautiful British Columbia!<br><br>A fun fact about me is that I traveled to 10 countries in Europe during my 4-month exchange term in Milan, Italy. (See my <a href="gallery.html">Photography Gallery</a>!) I am a firm believer in “travel far enough, you may meet yourself”!
+        </p>
+      </div>
+    </div>
+</div>
+
+<div id="contact">
+  <h1>Don't be a stranger!</h1>
+  <div id="contact-form">
+    <form method="POST" action="https://formspree.io/azmarie.yx@gmail.com">
+      <input type="hidden" name="_subject" value="Contact request from personal website" />
+      <input type="email" name="_replyto" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+    <div class="row">
+      <div class="col-sm-5 copyright">
+        <p>
+          Copyright &copy; 2018 Azmarie W
+        </p>
+      </div>
+      <div class="col-sm-2 top">
+        <span id="to-top">
+          <fa-icon [icon]="faChevronUp" class="fa-icon" aria-hidden="true"></fa-icon>
+        </span>
+      </div>
+      <div class="col-sm-5 social">
+        <ul>
+          <li>
+            <a href="https://github.com/Azmarie" target="_blank">
+              <fa-icon [icon]="faGithub" class="fa-icon" aria-hidden="true"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/azmarie-yuxin-wang/" target="_blank">
+              <fa-icon [icon]="faLinkedin" class="fa-icon" aria-hidden="true"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/azmarie_yx/" target="_blank">
+              <fa-icon [icon]="faInstagram" class="fa-icon" aria-hidden="true"></fa-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</footer>
