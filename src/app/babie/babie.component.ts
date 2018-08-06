@@ -31,4 +31,5 @@ export class BabieComponent implements OnInit {
   faInstagram = faInstagram;
   faGithub = faGithub;
   faLinkedin = faLinkedin;
+
 }
