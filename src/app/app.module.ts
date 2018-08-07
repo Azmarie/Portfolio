@@ -4,19 +4,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { BabieComponent } from './babie/babie.component';
+import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { ProjectsComponent } from './projects/projects.component';
 import { GalleryComponent } from './gallery/gallery.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BabieComponent,
+    HomeComponent,
     ProjectsComponent,
-    GalleryComponent
+    GalleryComponent,
+    NavbarComponent
   ],
   imports: [
     NgbModule.forRoot(),
