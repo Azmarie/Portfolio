@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent{
 
   constructor() { }
 
-  ngOnInit() {
+  @Output() navigateMeow: EventEmitter<string> = new EventEmitter<string>();
+
+  onClick(state) {
+    this.navigateMeow.emit(state);
   }
 
 }

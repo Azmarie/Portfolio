@@ -1,4 +1,4 @@
-<!-- <home></home> -->
-<!-- <gallery></gallery> -->
-<projects></projects>
-<!-- <navbar></navbar> -->
+<navbar (navigateMeow)="onNavigate($event)"></navbar>
+<home *ngIf="state === 'home'"></home>
+<gallery *ngIf="state === 'gallery'"></gallery>
+<projects *ngIf="state === 'projects'"></projects>
