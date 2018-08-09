@@ -1,0 +1,78 @@
+// Define base and accent colors
+$base-color: #b6e7a6;
+$base-color-hover: darken($base-color, 30%);
+$base-color-dark: darken($base-color, 55%);
+
+// Define background colors
+$background: #fff;
+$background-alt: #f2f2f5;
+
+// Define border colors
+$border: #dcd9d9;
+
+// Define text colors
+$heading: #374054;
+$text: #74808a;
+
+/*
+-------------------------------
+----- Footer Styles -----
+-------------------------------
+*/
+
+body {
+    margin: 15px;
+}
+  
+  .copyright {
+    padding: 20px;
+  
+    p {
+      margin: 0;
+      color: $text;
+    }
+  }
+  
+  .top {
+    text-align: center;
+  
+    span {
+      cursor: pointer;
+      display: block;
+      margin: 15px auto 0 auto;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: 3px solid lighten($text, 25%);
+      text-align:center;
+    }
+  
+    .fa-icon {
+      color: $text;
+    }
+  }
+  
+  .social {
+    text-align: right;
+  
+    ul {
+      margin: 5px 0 0 0;
+      padding: 0;
+    }
+  
+    li {
+      display: inline-block;
+      font-size: 1.25em;
+      list-style: none;
+    }
+  
+    a {
+      display: block;
+      color: $text;
+      padding: 10px;
+  
+      &:hover {
+        color: $base-color-hover;
+      }
+    }
+  }
