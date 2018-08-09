@@ -1,0 +1,113 @@
+/*
+---------------------------
+----- Lead Styles -----
+---------------------------
+*/
+
+.lead {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background: url(/assets/lead-bg.jpg);
+    background-size: cover;
+    overflow: scroll;
+    overflow-y: scroll;
+  }
+  
+
+/*
+-------------------------------
+----- Gallery Styles -----
+-------------------------------
+*/
+
+#gallery-option {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.75s;
+  
+    a {
+      display: inline;
+      margin: 20px;
+      font-size: 24px;
+      color:black;
+      &:hover {
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        transition: 0.4s;
+      }
+    }
+  
+  }
+  .container.gallery-container {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background-color: rgba(250, 250, 250, 0.6);
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+  }
+  
+  .gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+  }
+  
+  .gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+  }
+  
+  .tz-gallery {
+    padding: 25px;
+    margin:10px;
+    display: inline-block;
+  }
+  
+  .tz-gallery .lightbox img {
+    width: 350px;
+    height: 240px;
+  }
+  
+  .tz-gallery .portrait img {
+    width: 280px;
+    height: 390px;
+  }
+  .tz-gallery .vfw img {
+    width: 350px;
+    height: 495px;
+  }
+  
+  .postcard img{
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+  }
+  
+  
+  .tz-gallery img {
+    border-radius: 4px;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  }
+  
+  .tz-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  }
