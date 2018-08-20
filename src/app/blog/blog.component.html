@@ -1,0 +1,30 @@
+<div>
+  <table style="width:100%">
+    <tr>
+        <th>id</th>
+        <th>user</th>
+        <th>entry</th>
+        <th>createdAt</th>
+        <th>updatedAt</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let blog of blogs">
+        <td> {{ blog.id }} </td>
+        <td> {{ blog.user }} </td>
+        <td> {{ blog.entry }} </td>
+        <td> {{ blog.createdAt }} </td>
+        <td> {{ blog.updatedAt }} </td>
+        <td>     
+          <button (click)="deleteBlog(blog)">
+            Delete
+          </button>
+        </td>
+    </tr>
+  </table>
+
+    <button (click)="createBlog()">
+        Write
+    </button>
+
+
+</div>
