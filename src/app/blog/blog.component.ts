@@ -25,8 +25,8 @@ export class BlogComponent implements OnInit {
   
   createBlog(){
     var blog  = {
-      user:  "babie-automated",
-      entry:  "bu gu",
+      user:  "user",
+      entry:  "messege",
       };
     this.blogService.createBlog(blog).subscribe((response) => {
         this.getBlogs();
