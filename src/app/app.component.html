@@ -2,4 +2,8 @@
 <home *ngIf="state === 'home'"></home>
 <gallery *ngIf="state === 'gallery'"></gallery>
 <projects *ngIf="state === 'projects'"></projects>
-<footer></footer>
+<blog *ngIf="state === 'blog'"></blog>
+<footer *ngIf="state != 'blog'"></footer>
+
+<!-- <navbar (navigateMeow)="onNavigate($event)"></navbar>
+<blog></blog> -->
