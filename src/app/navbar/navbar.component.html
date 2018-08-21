@@ -1,7 +1,7 @@
 <div class="nav">
   <ul class="nav-list">
-     <li class="nav-list-item"  (click)="onClick('home')">
-       <a class="nav-list-item-text" routerLink="." fragment="bottom">About Me</a>
+     <li class="nav-list-item" (click)="onAnchorClick()" >
+       <a class="nav-list-item-text" routerLink="/home" fragment="about">About Me</a>
      </li>
      <li class="nav-list-item"  (click)="onClick('projects')">
        <a class="nav-list-item-text" routerLink="/projects">Projects</a>
@@ -9,9 +9,9 @@
      <li class="nav-list-item"  (click)="onClick('gallery')">
        <a class="nav-list-item-text" routerLink="/gallery">Gallery</a>
      </li>
-     <!-- <li class="nav-list-item"  (click)="onClick('home')">
-       <a class="nav-list-item-text" routerLink="/home#contact">Contact</a>
-     </li> -->
+     <li class="nav-list-item"  (click)="onAnchorClick()">
+       <a class="nav-list-item-text" routerLink="/home" fragment="contact">Contact</a>
+     </li>
      <li class="nav-list-item"  (click)="onClick('blog')">
       <a class="nav-list-item-text" routerLink="/blogs">Blog</a>
     </li>
