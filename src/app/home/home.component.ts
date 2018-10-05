@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { ActivatedRoute } from '@angular/router'; // <-- do not forget to import
-
+import { ActivatedRoute } from '@angular/router'; 
 
 @Component({
   selector: 'home',
@@ -10,8 +9,8 @@ import { ActivatedRoute } from '@angular/router'; // <-- do not forget to import
 })
 export class HomeComponent implements OnInit {
 
-  private message: string = 'babie misses jackie!';
-  private classNames: string = 'babie misses jackie';
+  // private message: string = 'babie misses jackie!';
+  // private classNames: string = 'babie misses jackie';
   private faChevronDown = faChevronDown;
   private fragment: string;
 

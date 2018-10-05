@@ -83,6 +83,10 @@ $text: #74808a;
   padding: 80px 15px;
   border-bottom: 1px solid $border;
   background-color: $background-alt;
+
+  a {
+    color: #4b982d;
+  }
 }
 
 .heading {
@@ -144,7 +148,7 @@ $text: #74808a;
 
   button {
     display: block;
-    width: 104%; //WHY???
+    width: 100%;
     background: #fff;
     border-radius: 4px;
     padding: 5px 10px;
